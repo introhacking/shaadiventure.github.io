@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Jquery CDN -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      type="text/js"
+    ></script>
+    <!-- STYLESHEET -->
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mediaQuery.css" rel="stylesheet" type="text/css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="mani_about-wrapper">
+        <my-header></my-header>
+        <!-- Subtitle -->
+        <div class="mani_glass-hero">
+          <div class="mani_glass mani_content">
+            <h2>Contact Us to Know More</h2>
+            <p>
+              We are here to answer all your questions and recommend the best
+              solutions for your wedding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Contact  -->
+    <div class="contact_wrapper">
+      <div class="contact_area">
+        <div class="contact_heading">
+          <h2>Ask your queries in a few simple steps!</h2>
+          <p>
+            You can send your requirements or queries to get our quick response
+            right away. Our management team will evaluate your needs and give
+            you a call back with valuable suggestions.
+          </p>
+        </div>
+        <div class="contact_area-content">
+          <form id="form" onsubmit="return formValidation(e)" action=" ">
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name*"
+                required
+              />
+              <span id="nameErr"></span>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone*"
+                required
+              />
+              <span id="phoneErr"></span>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email*"
+                required
+              />
+              <span id="emailErr"></span>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="City"
+                required
+              />
+              <span id="cityErr"></span>
+            </div>
+            <div>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Date of event"
+                required
+              />
+              <span id="dateErr"></span>
+            </div>
+            <div>
+              <select id="budget">
+                <option value="--Select your Budget--" selected>
+                  --Select your Budget--
+                </option>
+                <option value="Between 1 to 5 lakh">Between 1 to 5 lakh</option>
+                <option value="Between 5 to 10 lakh">
+                  Between 5 to 10 lakh
+                </option>
+                <option value="10+ Lakh Above">10+ Lakh Above</option>
+              </select>
+              <span id="budgetErr"></span>
+              <!-- <input type="text" placeholder="Select your Budget*" required /> -->
+            </div>
+            <button id="formSubmit" type="submit">Send Message</button>
+          </form>
+
+          <div class="contact_details-wrapper">
+            <div class="contact_card-img">
+              <img src="../images/wedding-logo.png" />
+            </div>
+
+            <div class="contact_card-details">
+              <div class="contact_car_wrapper">
+                <div class="contact_info">
+                  <p>shaadiventures</p>
+                  <p>wedding planner</p>
+                  <h2>Naveen Kumar Dixit</h2>
+                </div>
+                <div class="contact_details contact_phone">
+                  <i class="fa fa-volume-control-phone"></i>
+                  <span>+91-9667700828</span>
+                </div>
+                <div class="contact_details contact_mail">
+                  <i class="fa fa-envelope-o"></i>
+                  <span>info@shaadiventures.com</span>
+                </div>
+                <div class="contact_details contact_mail">
+                  <i class="fa fa-wifi"></i>
+                  <span>www.shaadiventures.com</span>
+                </div>
+                <div class="contact_details contact_location">
+                  <i class="fa fa-map-marker"></i>
+                  <span
+                    >Plot no.107,Vyapar Marg,D-Block,Sector-2,Noida,Uttar
+                    Pradesh 201301</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <my-footer></my-footer>
+    </footer>
+
+    <script type="module" src="../components/header.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+ <!-- <div class="mani_complete card6">
+            <div class="poster">
+              <img
+                src="https://www.shubharambh.co.in/assets/img/homephotography.png"
+              />
+            </div>
+            <div class="mani_poster-content">
+              <h3>Corporate Event</h3>
+              <div class="mani-poster-info">
+                <p>Conference | Exhibition | Event</p>
+                <button>Know more</button>
+              </div>
+            </div>
+          </div> -->
+
+           <!-- Vendors -->
+    <section class="mani-vendor-wrapper">
+      <div class="mani_premium-content">
+        <h2>Premium Vendors at ShaadiVenture</h2>
+        <p>Explore the services offered by our premium wedding vendors.</p>
+      </div>
+      <div class="mani_vendor-flex">
+        <!-- card -->
+        <div class="mani_vendors card1">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING VENUES</span>
+            <p class="mani_vendor-subtitle">NK Meredians</p>
+            <span class="mani_ventor-address">Sector 19, Noida, Delhi</span>
+            <button id="letConnect">Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card2">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">ENTERTAINMENT</span>
+            <p class="mani_vendor-subtitle">Kumar Event-Planner</p>
+            <span class="mani_ventor-address"
+              >C-242, New Ashok Nagar, New Delhi</span
+            >
+            <button id="letConnect">Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card3">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING PHOTOGRAPHY</span>
+            <p class="mani_vendor-subtitle">Pixel Studios</p>
+            <span class="mani_ventor-address"
+              >B-194/1, Derawal Nagar, Delhi-8</span
+            >
+            <button id="letConnect">Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card4">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING CATERING </span>
+            <p class="mani_vendor-subtitle">Delux Catering</p>
+            <span class="mani_ventor-address"
+              >C-4/182, Yamuna Vihar, Delhi
+            </span>
+            <button id="letConnect">Get a Quote</button>
+          </div>
+        </div>
+      </div>
+      <button class="find_vendor">Find more ventor</button>
+    </section>
+
+    <!-- Wedding planner -->
+    <section class="mani-vendor-wrapper">
+      <div class="mani_premium-content">
+        <h2>Our Premium Wedding Planners</h2>
+        <p>Here are top wedding planners in our network.</p>
+      </div>
+      <div class="mani_vendor-flex">
+        <!-- card -->
+        <div class="mani_vendors card1">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING VENUES</span>
+            <p class="mani_vendor-subtitle">NK Meredians</p>
+            <span class="mani_ventor-address">Sector 19, Noida, Delhi</span>
+            <button>Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card2">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">ENTERTAINMENT</span>
+            <p class="mani_vendor-subtitle">Kumar Event-Planner</p>
+            <span class="mani_ventor-address"
+              >C-242, New Ashok Nagar, New Delhi</span
+            >
+            <button>Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card3">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING PHOTOGRAPHY</span>
+            <p class="mani_vendor-subtitle">Pixel Studios</p>
+            <span class="mani_ventor-address"
+              >B-194/1, Derawal Nagar, Delhi-8</span
+            >
+            <button>Get a Quote</button>
+          </div>
+        </div>
+        <div class="mani_vendors card4">
+          <div class="mani_vendor-img">
+            <img src="https://www.shubharambh.co.in/assets/img/v1.png" />
+          </div>
+          <div class="mani_vendor-content">
+            <span class="mani_vendor-title">WEDDING CATERING </span>
+            <p class="mani_vendor-subtitle">Delux Catering</p>
+            <span class="mani_ventor-address"
+              >C-4/182, Yamuna Vihar, Delhi
+            </span>
+            <button>Get a Quote</button>
+          </div>
+        </div>
+      </div>
+      <button class="find_vendor">Find more ventor</button>
+    </section>

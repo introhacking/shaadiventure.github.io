@@ -1,0 +1,1140 @@
+/* Font family (Nunito Sans) */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+  /* overflow-x: hidden; */
+}
+html {
+  font-size: 16px;
+}
+body {
+  position: relative;
+}
+/* body.form_open {
+  overflow: hidden;
+} */
+img {
+  max-width: 100%;
+  width: 100%;
+}
+a {
+  font-size: 15.5px;
+  font-weight: 600;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #fff7f6;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 0.5px solid red;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: red;
+  color: #ffffff;
+}
+input,
+select {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.info_form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+}
+.form_open .info_form {
+  visibility: visible;
+  opacity: 1;
+}
+.form_center {
+  width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-635px);
+  transition: 1s ease;
+}
+.form_open .form_center {
+  transform: translateY(0px);
+}
+.form_background_manage {
+  padding: 20px 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+.form_background_manage .custom_color,
+.form_background_manage input[type="date"] {
+  color: #555555;
+}
+.form_background_manage form > div,
+.form_background_manage form > select {
+  margin: 10px 0px;
+}
+.form_background_manage form input,
+.form_background_manage form select {
+  border: 0.5px solid #555555;
+}
+.custom_style {
+  color: #ffffff;
+  padding: 5px 10px 10px 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+.custom_style span {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.custom_style::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0aa3d6;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0% 100%);
+}
+/* Header section */
+.mani_header-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("https://www.shubharambh.co.in/assets/img/_JAN2609.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  position: relative;
+}
+.mani_header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  padding: 5px 30px;
+}
+.mani_header-section.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(0px);
+  transition: all 0.5s ease;
+  z-index: 999;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.trigger_menu i.menu_bar {
+  font-size: 28px;
+  cursor: pointer;
+}
+.mani_glass {
+  background: linear-gradient(190deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 80%;
+  height: 44vh;
+  margin: 0 auto;
+  /* border: 1px solid #fff; */
+  border-radius: 5px;
+  z-index: 10;
+}
+.mani_glass-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80vh;
+}
+.mani_content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 15px;
+  flex-direction: column;
+}
+.mani_content h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
+  text-shadow: 1px 3px #909090;
+  margin: 25px 0px 0px 0px;
+}
+.mani_content p {
+  text-align: center;
+  font-size: 20px;
+  color: aliceblue;
+}
+.mani_button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mani_content button {
+  max-width: max-content;
+  text-align: center;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* margin: 10px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mani_content button:hover {
+  background-color: red;
+  color: #ffffff;
+}
+.mani_content span {
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  margin: 15px 0px;
+}
+.mani_manu-wrapper,
+.mani_manu-wrapper ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.mani_manu-wrapper ul li {
+  position: relative;
+  margin-right: 15px;
+}
+.mani_manu-wrapper ul li:last-child() {
+  margin-right: 0px;
+}
+.mani_manu-wrapper ul li a {
+  padding: 10px 0px;
+  border-radius: 5px;
+  /* color: #808080; */
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.mani_manu-wrapper ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.155rem;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  background-color: red;
+  transition: all 0.5s ease;
+}
+.mani_manu-wrapper ul li:hover::after {
+  color: red;
+  transform: scale(1, 1);
+}
+/*  HEADER MENU */
+.mani_manu-wrapper ul li ul.dropdown {
+  position: absolute;
+  flex-direction: column;
+  width: 240px;
+  background-color: #ffffff;
+  z-index: 999;
+  padding: 14px;
+  align-items: flex-start;
+  left: 0px;
+  top: -200px;
+  opacity: 0;
+  transition: 1s ease;
+  /* border: 1px solid; */
+}
+.mani_manu-wrapper > ul > li:hover ul.dropdown {
+  opacity: 1;
+  top: 40px;
+  transition: 1s ease;
+}
+
+.mani_manu-wrapper ul li ul.dropdown li {
+  margin: 0;
+}
+
+.mani_manu-wrapper ul li ul.dropdown li > a {
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0;
+  display: block;
+  font-weight: 500;
+  padding: 5px 0;
+}
+/* MOBILE MENU */
+body.menuOpen {
+  position: fixed;
+}
+p.closeMenu {
+  color: #ffffff;
+  float: right;
+  padding: 15px 33px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.menuOpen .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+}
+.sidebar_menu-open {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 99;
+  transform: translateX(-390px);
+  transition: all 0.5s ease;
+  background-color: rgb(249, 58, 58);
+}
+.menuOpen .sidebar_menu-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.mobile_menu ul {
+  display: none;
+  background-color: #c8a4a4;
+  padding: 10px 15px;
+}
+.mobile_menu.submenu-open ul {
+  display: block;
+}
+.mobile_menu-wrapper ul.mobile_dropdown li {
+  margin: 0;
+}
+ul.mobile_dropdown li:hover {
+  background: #d3abab;
+  color: #ffffff;
+}
+ul.mobile_dropdown li > a {
+  padding: 5px;
+}
+.mobile_menu-wrapper {
+  padding: 30px 15px;
+  height: 100%;
+}
+.mobile_menu-wrapper ul li {
+  position: relative;
+  margin: 10px 0px;
+}
+.mobile_menu-wrapper ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+}
+.mobile_menu-wrapper ul li .fa {
+  color: #ffffff;
+}
+/* EXPERT MANAGEMENT FOR WEDDING */
+.mani_expert-manage {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+  line-height: 1.4;
+}
+.mani_expert-manage h2 {
+  margin-bottom: 10px;
+}
+.mani_expert-video {
+  border: 1px solid grey;
+  width: 80%;
+  margin: 0 auto;
+  height: 60%;
+  margin-bottom: 40px;
+}
+.mani_expert-video video {
+  width: 100%;
+  height: 100%;
+}
+
+/* OUR LOVE STORY */
+.mani_love-story-wrapper {
+  background-color: #f8f8ff; /*ghost white color*/
+}
+.mani_love-story {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.mani_love-story p {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 0 5px 0;
+  text-align: left;
+}
+.mani_love p {
+  text-align: center;
+}
+.mani_love-story h2 {
+  font-size: 34px;
+}
+.timeline {
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+  margin: 30px 0;
+}
+.line {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 1px);
+  width: 2px;
+  top: 50px;
+  bottom: -50px;
+  background-color: aqua;
+  display: none;
+}
+.line::after,
+.line::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  left: 42px;
+  transform: translateX(-50px);
+}
+.line::after {
+  bottom: -15px;
+}
+.section {
+  display: flex;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 600ms ease;
+  position: relative;
+  z-index: 1;
+  margin: 50px 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  min-height: 200px;
+}
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+  transform: translateX(100%);
+}
+.bead {
+  position: absolute;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-color: green;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: inherit;
+  max-height: 300px;
+}
+.mani_left-handside,
+.mani_right-handside {
+  width: 47%;
+}
+.mani_left-handside {
+  background-color: #edf5f7;
+  color: #818491;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 -15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.mani_left-handside h2 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+}
+.show-me:nth-child(n) {
+  transform: none;
+  opacity: 1;
+}
+.mani_image-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* COMPLETE WEDDING PLANNING */
+.mani_complete-wedding-wrapper {
+  width: 100%;
+  background-color: #fff7f6;
+  padding: 20px 0px;
+}
+.mani_complete-wedding,
+.mani_complete-wedding-card-wrapper {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto 30px auto;
+}
+.mani_complete-wedding h2 {
+  font-size: 30px;
+}
+.mani_complete-wedding p {
+  font-size: 18px;
+  margin: 0;
+}
+.mani_complete-wedding-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.mani_complete {
+  position: relative;
+  width: 31.33%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.11);
+  overflow: hidden;
+}
+.mani_complete .poster {
+  overflow: hidden;
+  position: relative;
+}
+.mani_complete .poster:before {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #0aa3d6 50%, transparent);
+  z-index: 1;
+  transition: 0.5s;
+}
+.mani_complete:hover .poster:before {
+  bottom: 0px;
+}
+.mani_complete .poster img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.mani_complete:hover .poster img {
+  transform: translateY(-50px);
+  filter: blur(3px);
+}
+.mani_complete .mani_poster-content {
+  position: absolute;
+  width: 100%;
+  bottom: -122px;
+  left: 0px;
+  padding: 20px 5px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.mani_complete .mani_poster-content h3 {
+  margin: 20px 0px 40px 0;
+}
+.mani_complete:hover .mani_poster-content {
+  bottom: 15px;
+}
+.mani_complete .mani-poster-info {
+  color: #f8f8ff;
+  margin-top: 10px;
+  position: relative;
+}
+.mani_complete .mani-poster-info p {
+  font-size: 10px;
+  transition: 0.5ms;
+}
+.mani_complete:hover .mani-poster-info p {
+  font-size: 18px;
+}
+.mani_complete .mani-poster-info button {
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mani_complete .mani-poster-info button:hover {
+  background-color: rgb(247, 43, 43);
+  color: #f8f8ff;
+}
+.mani_plan-destination {
+  /* display: flex; */
+  align-items: center;
+}
+.mani_plan-img {
+  width: 50%;
+}
+.mani_plan-content {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+.mani_plan-content p {
+  /* font-size: 30px; */
+  font-weight: 500;
+}
+.mani_plan-content h2 {
+  /* font-size: 45px; */
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.mani_plan-content button {
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 18px;
+}
+/* PREMIUM VENTORS */
+.mani-vendor-wrapper {
+  background-color: #f8f8ff;
+  padding: 60px 0px;
+  text-align: center;
+}
+.mani_premium-content {
+  text-align: center;
+}
+.mani_vendor-flex {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.mani_vendors {
+  border-radius: 5px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  width: 23%;
+  overflow: hidden;
+}
+.mani_vendor-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mani_ventor-address {
+  font-size: 13px;
+  color: #555555;
+}
+.mani_vendor-img img {
+  width: 100%;
+  height: fit-content;
+  border-top: 5px;
+}
+.mani_vendor-title {
+  font-size: 12px;
+  margin: 5px 0;
+}
+.mani_vendor-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+.mani_vendor-content button {
+  width: max-content;
+  margin: 10px 0;
+  border: 0.5px solid red;
+  border-radius: 5px;
+}
+/* NEW COUPLE ABOUT SAY */
+.mani_new-couple {
+  padding: 60px 10px;
+  text-align: center;
+  background-color: #f8f8ff;
+}
+.mani_couple-testinomial {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mani_testinomial-card {
+  width: 350px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.mani_circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url("https://www.shubharambh.co.in/assets/img/service1.png");
+  background-size: cover;
+  float: left;
+  shape-outside: circle();
+  margin: 20px 15px 15px 0px;
+}
+.mani_testinomial-card p {
+  margin: 15px 0px 0px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
+}
+.mani_testinomial-card .mani_text-hightlight {
+  text-align: center;
+  font-size: 20px;
+  color: crimson;
+  font-style: italic;
+}
+/* FOOTER */
+.mani_footer-wrapper {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 50px;
+}
+.mani_footer-title {
+  color: #ffffff;
+  /* border: 1px solid; */
+  width: 25%;
+}
+.mani_footer-title h2 {
+  font-size: 24px;
+}
+.mani_footer-btn {
+  margin: 10px 0;
+  font-size: 18px;
+}
+ul.mani_social-link {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid; */
+}
+.mani_social-link .fa {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 24px;
+  margin: 5px 0px 10px;
+}
+.mani_social-link .fa:hover {
+  opacity: 1;
+}
+.mani_social-link .fa:nth-last-child(n) {
+  margin-right: 18px;
+}
+.mani_footer-wrapper ul li {
+  margin: 10px 0;
+}
+.mani_footer-wrapper ul li a {
+  color: #ffffff;
+}
+.mani_footer-wrapper ul li a:hover {
+  opacity: 0.7;
+  margin-left: 5px;
+  transition: all 0.2s ease;
+}
+.mani_footer-wrapper ul li i.fa {
+  font-size: 11px;
+  margin-right: 3px;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+/* ABOUT PAGE */
+.mani_about-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("https://www.shubharambh.co.in/assets/img/about-baner.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  padding-top: 0px;
+}
+section.about_trusted-wedding {
+  background: #f8f8ff;
+  padding: 80px 0;
+}
+
+.about_trusted-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  display: flex;
+}
+.about_trusted-left {
+  width: 75%;
+}
+
+.about_trusted-right {
+  width: 25%;
+  padding: 0px 20px;
+}
+
+.about_trusted-left h2 {
+  font-size: 40px;
+}
+
+span.text_red {
+  color: #bf2000;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 10px 0;
+  display: block;
+}
+
+.about_trusted-left p {
+  font-size: 18px;
+}
+
+.about_trusted-left p span {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #909090;
+}
+.about_button-wrapper {
+  margin: 10px 0;
+}
+.about_experienced-wedding {
+  padding: 80px 0px;
+}
+.about_quality-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.quality_headline h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.quality_headline p {
+  color: #909090;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.quality_headline .text_highlight {
+  color: #555555;
+  font-weight: 600;
+}
+.quality_card-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 0px;
+}
+.quality_card {
+  width: 30%;
+  padding: 22px 15px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+}
+.quality_card h2 {
+  color: #bf2000;
+}
+.quality_card p i.fa {
+  font-size: 40px;
+  padding: 5px;
+}
+.quality_card .quality_content {
+  padding: 20px;
+}
+.grow_wedding {
+  background: #f8f8ff;
+  padding: 60px 0;
+}
+.grow_business-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.grow_wedding .grow_img {
+  width: 30%;
+  padding: 15px 15px 15px 0px;
+}
+.grow_wedding .grow_img img {
+  width: 100%;
+  height: 100%;
+}
+.grow_wedding .grow_business-content {
+  width: 70%;
+}
+.grow_business-wrapper button {
+  margin: 15px 0px;
+}
+/* CONTACT */
+.contact_wrapper {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 197, 197, 0.404) 30%,
+    rgba(0, 0, 255, 0.187) 70%
+  );
+  /* height: 100vh; */
+  padding: 60px 0;
+}
+.contact_area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.contact_heading {
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+}
+.contact_heading p {
+  margin: 10px 0px;
+}
+.contact_area-content {
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact_area-content form {
+  width: 60%;
+  padding: 10px 10px 10px 0;
+}
+.contact_area-content form > div {
+  margin: 10px 0;
+}
+form > div span,
+form.letConnectForm > div span {
+  color: #bf2000;
+  font-size: 12px;
+  padding: 10px 0px 0px 10px;
+}
+.contact_details-wrapper {
+  width: 40%;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.contact_details-wrapper:hover .contact_card-details {
+  right: 0%;
+}
+.contact_card-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid #970404;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 auto; */
+}
+.contact_card-img img {
+  width: 250px;
+  height: 90px;
+  vertical-align: middle;
+  border: 2px solid #970404;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.contact_car_wrapper {
+  /* padding: 5px 25px; */
+  /* border: 1px solid #970404; */
+  /* border-radius: 5px; */
+}
+.contact_card-details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #36cafb46;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 10px 25px;
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+}
+.contact_info {
+  text-align: center;
+}
+.contact_info p {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+}
+.contact_info h2 {
+  margin: 5px 0;
+  font-style: italic;
+}
+.contact_location span {
+  width: 100%;
+}
+
+/* LET_CONNECT_FORM */
+.formErrShow {
+  position: relative;
+}
+form.letConnectForm > div span {
+  position: absolute;
+  right: 5px;
+  line-height: 10px;
+}
+/* WEDDING MANAGEMENT */
+.wedding_management-wrapper {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background: #f6f6f6;
+}
+.wedding_management-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.wedding_management-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.wedding_card {
+  width: 22.5%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+.wedding_card h2 {
+  font-size: 18px;
+}
+.wedding_card i.fa {
+  font-size: 50px;
+}
+.wedding_card p i {
+  text-align: center;
+  width: 100%;
+}
+.wedding_card .weding_card_content {
+  font-size: 16px;
+}
+.wedding_simpler-wrapper {
+  background-color: #ffffff;
+  padding: 60px 0px 0px 0px;
+}
+.wedding_simpler-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.wedding_simpler-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.simpler_content {
+  width: 60%;
+  padding: 0px 20px 20px 20px;
+}
+.simpler_content h2 {
+  font-size: 35px;
+}
+.simpler_content > p {
+  font-size: 18px;
+}
+.simpler_flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0;
+}
+.simpler_flex-icons {
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 2px 2px #d3abab;
+  letter-spacing: 1px;
+}
+.simpler_flex-col span {
+  font-size: 24px;
+  color: crimson;
+  text-shadow: 2px 2px #0aa3d6;
+}
+.simpler_flex-inner-p p {
+  font-size: 16px;
+  padding: 0px 10px;
+  text-shadow: none;
+}
+.simpler_image {
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+}
+.simpler_image img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+/* CATERING MANAGEMENTENT */
+.catering_management {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.catering_management h2 {
+  font-size: 30px;
+}

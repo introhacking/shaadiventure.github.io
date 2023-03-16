@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Jquery CDN -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      type="text/js"
+    ></script>
+    <!-- STYLESHEET -->
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mediaQuery.css" rel="stylesheet" type="text/css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="mani_about-wrapper">
+        <my-header></my-header>
+        <!-- Subtitle -->
+        <div class="mani_glass-hero">
+          <div class="mani_glass mani_content">
+            <h2>Helping Couples Plan Perfect Weddings!</h2>
+            <p>
+              A huge marketplace to find wedding planner and vendors with a team
+              of romantics who specialize in planning weddings! Resources and
+              expertise come together at
+              <span class="text_highlight">ShaadiVenture</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Trusted connection wedding -->
+    <section class="about_trusted-wedding">
+      <div class="about_trusted-container">
+        <div class="about_trusted-left">
+          <div>
+            <h2>Trusted for connecting wedding professionals with couples!</h2>
+            <span class="text_red"
+              >Thousands of wedding vendors in one wedding management company.
+            </span>
+            <p>
+              <span class="text_highlight">ShaadiVenture</span> is reputed for
+              its huge marketplace where engaged couples and wedding
+              professionals can connect. Thousands of couples use our listing
+              site to find location-based wedding professionals among thousands
+              of vendors we have in our network. Packed with reviews, pricing
+              details, and expert assistance,
+              <span class="text_highlight">ShaadiVenture</span> has successfully
+              organized thousands of weddings.
+            </p>
+          </div>
+          <div class="about_button-wrapper">
+            <button id="letConnect">Start Manage your Wedding</button>
+          </div>
+        </div>
+        <div class="about_trusted-right">
+          <img
+            src="https://www.shubharambh.co.in/assets/img/about-left.png"
+            alt="about_trusted-img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Experienced and Quality  wedding -->
+    <section class="about_experienced-wedding">
+      <div class="about_quality-container">
+        <div class="quality_headline">
+          <h2>Experienced and Quality Wedding Management Resources</h2>
+          <!-- <span class="text_red"> -->
+          <p>
+            <span class="text_highlight">ShaadiVenture</span> has a professional
+            team of people who personally love weddings. Our support and
+            resources enable weddings to attain everything you need.
+          </p>
+          <!-- </span> -->
+        </div>
+        <div class="quality_card-wrapper">
+          <div class="quality_card local_wedding">
+            <p><i class="fa fa-map-marker"></i></p>
+            <h2>Local Wedding Vendors</h2>
+            <p class="quality_content">
+              We offer a comprehensive directory of professionals and vendors
+              associated with wedding requirements. Proper information is
+              available to compare and choose wisely.
+            </p>
+          </div>
+          <div class="quality_card review">
+            <p><i class="fa fa-thumbs-up"></i></p>
+            <h2>Reviews</h2>
+            <p class="quality_content">
+              In the presence of reviews from previous service users, you can
+              easily make a decision about wedding professionals on our
+              platform. Hundreds of reviews are available from real married
+              couples.
+            </p>
+          </div>
+          <div class="quality_card wedding_expert">
+            <p><i class="fa fa-user"></i></p>
+            <h2>Wedding Experts</h2>
+            <p class="quality_content">
+              Plan your day of wedding easily with our wedding experts who are
+              here to assist, inspire and support your dream wedding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Grow your wedding business images -->
+    <section class="grow_wedding">
+      <div class="grow_business-wrapper">
+        <div class="grow_img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMJHkqAd5OsTKQvk2A0okUgUTUBkILXrgiQw&usqp=CAU"
+          />
+        </div>
+        <div class="grow_business-content">
+          <h2>Grow Your Wedding Business</h2>
+          <span class="text_red"
+            >Showcase your wedding services to thousands of interested couples!
+          </span>
+          <p>
+            At our wedding management company, wedding businesses attain
+            exposure to a highly relevant and larger market of couples.
+            shubharambh offers a premium listing of wedding vendors to promote
+            the services of high-quality, high-rated vendors. We help wedding
+            services in achieving the kind of exposure they require along with
+            bookings and leads.
+          </p>
+          <button id="letConnect">Connect for your business deal</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <my-footer></my-footer>
+    </footer>
+    <!-- Information Form -->
+    <!-- <div class="info_form">
+      <div class="form_center">
+        <div class="form_background_manage">
+          <div class="custom_style">
+            <h2>Let's Discuss</h2>
+            <span class="form_hide" id="form_HIDE">X</span>
+          </div>
+          <form
+            class="letConnectForm"
+            id="letConnectForm"
+            onsubmit="return infoFormSubmitToConnect()"
+            action=""
+          >
+            <div class="formErrShow">
+              <input
+                type="text"
+                id="info_name"
+                name="name"
+                placeholder="Name*"
+              />
+              <span id="info_nameErr"></span>
+            </div>
+            <div class="formErrShow">
+              <input
+                type="text"
+                id="info_phone"
+                name="phone"
+                placeholder="Phone*"
+                onkeypress="return /[0-9]/i.test(event.key)"
+              />
+              <span id="info_phoneErr"></span>
+            </div>
+            <div class="formErrShow">
+              <input
+                type="email"
+                id="info_email"
+                name="email"
+                placeholder="Email*"
+              />
+              <span id="info_emailErr"></span>
+            </div>
+            <div class="formErrShow">
+              <input
+                type="text"
+                id="info_city"
+                name="city"
+                placeholder="City*"
+              />
+              <span id="info_cityErr"></span>
+            </div>
+            <div class="formErrShow">
+              <input
+                type="date"
+                id="info_date"
+                name="date"
+                placeholder="Date*"
+              />
+              <span id="info_dateErr"></span>
+            </div>
+            <div class="formErrShow">
+              <select class="custom_color" id="info_category">
+                <option value="--Select your category--">
+                  --Select your category--
+                </option>
+                <option value="Wedding management">Wedding management</option>
+                <option value="Catering management">Catering management</option>
+                <option value="Decor management">Decor management</option>
+                <option value="Entertainment management">
+                  Entertainment management
+                </option>
+                <option value="Photography">Photography</option>
+                <option value="Corporate events">Corporate events</option>
+              </select>
+              <span id="info_categoryErr"></span>
+            </div>
+
+            <div class="formErrShow">
+              <select class="custom_color" id="info_pax">
+                <option value="--Number of Pax--">--Number of Pax--</option>
+                <option value="20-100">20 - 100</option>
+                <option value="100-300">100 - 300</option>
+                <option value="300-500">300 - 500</option>
+                <option value="500-1000">500 - 1000</option>
+              </select>
+              <span id="info_paxErr"></span>
+            </div>
+            <div class="formErrShow">
+              <select id="info_budget" class="custom_color">
+                <option value="--Select your Budget--" selected>
+                  --Select your Budget--
+                </option>
+                <option value="Between 1 to 5 lakh">Between 1 to 5 lakh</option>
+                <option value="Between 5 to 10 lakh">
+                  Between 5 to 10 lakh
+                </option>
+                <option value="10+ Lakh Above">10+ Lakh Above</option>
+              </select>
+              <span id="info_budgetErr"></span>
+            </div>
+            <div>
+              <button type="submit">Let's Connect</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    <let-connect></let-connect>
+    <script type="module" src="../components/header.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+  </body>
+</html>

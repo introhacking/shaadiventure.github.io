@@ -1,0 +1,447 @@
+/* 320px */
+@media only screen and (min-width: 17em) {
+  .mani_plan-destination {
+    display: block;
+  }
+  .mani_plan-img,
+  .mani_plan-content {
+    width: 100%;
+  }
+  .mani_plan-content p {
+    font-size: 20px;
+  }
+  .mani_plan-content h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .mani_plan-content {
+    padding: 20px 0;
+  }
+  .mani_footer-wrapper {
+    display: block;
+  }
+  .mani_footer-title {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .mani_footer-title:not(:last-child) {
+    border-bottom: 1px solid #ffffff;
+  }
+  .mani_footer-wrapper ul li a {
+    font-size: 14px;
+  }
+  .mani_footer-btn button {
+    width: 100%;
+  }
+  .mani_footer-wrapper {
+    padding: 60px 30px;
+  }
+  .mani_content h2 {
+    font-size: 20px;
+  }
+  .mani_content p {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .mani_glass {
+    width: 90%;
+  }
+  .mani_content button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin: 15px 0;
+  }
+  .mani_content span {
+    margin: 0;
+  }
+  .mani_manu-wrapper {
+    display: none;
+  }
+  .mani_complete-wedding-card-wrapper {
+    width: 90%;
+  }
+  .mani_complete {
+    width: 100%;
+    height: auto;
+  }
+  .mani_complete-wedding h2 {
+    font-size: 27px;
+  }
+  .sidebar_menu-open {
+    width: 76%;
+  }
+  /* About */
+  .about_trusted-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .about_trusted-left {
+    width: 100%;
+  }
+  .about_trusted-right {
+    width: 100%;
+  }
+  .about_trusted-left h2 {
+    font-size: 20px;
+  }
+  span.text_red {
+    font-size: 17px;
+  }
+  .grow_business-wrapper {
+    display: block;
+  }
+  .grow_wedding .grow_img {
+    width: 100%;
+    padding: 0;
+  }
+  .grow_wedding .grow_business-content {
+    width: 100%;
+  }
+  .quality_headline h2 {
+    font-size: 25px;
+  }
+  .about_experienced-wedding {
+    padding: 40px 0px;
+  }
+  .quality_card-wrapper {
+    display: block;
+    padding: 30px 0px;
+  }
+  .quality_card {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .quality_card h2 {
+    font-size: 16px;
+  }
+  .quality_card .quality_content {
+    padding: 10px;
+  }
+  .contact_details-wrapper,
+  #formSubmit,
+  .contact_area-content form,
+  .contact_area,
+  .contact_heading {
+    width: 100%;
+  }
+  .contact_area-content form {
+    padding: 10px 0px 10px 0px;
+  }
+  .contact_area-content {
+    display: block;
+  }
+  .wedding_simpler-content {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .simpler_content {
+    width: 100%;
+    padding: 0;
+  }
+  .simpler_content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .simpler_content > p {
+    font-size: 16px;
+    padding: 15px 0px;
+  }
+  .simpler_flex-icons {
+    font-size: 19px;
+  }
+  .simpler_flex-col span {
+    font-size: 18px;
+  }
+  .simpler_image {
+    width: 100%;
+  }
+}
+/* 504 */
+@media only screen and (min-width: 28em) {
+  .mani_expert-manage {
+    width: 80%;
+  }
+  .mani_plan-content h2 {
+    font-size: 30px;
+  }
+  .mani_footer-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mani_footer-title:not(:last-child) {
+    border-bottom: 0px solid #ffffff;
+  }
+  ul.mani_social-link {
+    justify-content: center;
+  }
+  .mani_content h2 {
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+  }
+  .mani_content button {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .mani_glass {
+    width: 80%;
+  }
+  .mani_complete {
+    width: 46%;
+  }
+  .mani_love-story h2 {
+    font-size: 30px;
+  }
+  .timeline {
+    margin: 0;
+  }
+  .sidebar_menu-open {
+    width: 70%;
+  }
+  .about_trusted-container {
+    flex-direction: row;
+    padding: 0px 15px;
+  }
+  .about_trusted-left {
+    width: 50%;
+  }
+  .about_trusted-right {
+    width: 50%;
+  }
+  .about_trusted-left h2 {
+    font-size: 30px;
+  }
+  span.text_red {
+    font-size: 20px;
+  }
+  .contact_area {
+    width: 80%;
+  }
+  .simpler_content h2 {
+    font-size: 35px;
+    padding: 20px 0;
+    text-align: left;
+  }
+  .simpler_flex-icons {
+    font-size: 25px;
+  }
+}
+/* 768 */
+@media only screen and (min-width: 42.65em) {
+  .mani_footer-title {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+  }
+  .mani_footer-wrapper {
+    display: flex;
+  }
+  ul.mani_social-link {
+    justify-content: flex-start;
+  }
+  .mani_content h2 {
+    font-size: 35px;
+  }
+  .mani_complete {
+    width: 31%;
+  }
+  .sidebar_menu-open {
+    width: 40%;
+  }
+  .about_trusted-left h2 {
+    font-size: 40px;
+  }
+  .grow_business-wrapper {
+    display: flex;
+  }
+  .grow_wedding .grow_img {
+    width: 30%;
+    padding: 15px 15px 15px 0px;
+  }
+  .grow_wedding .grow_business-content {
+    width: 70%;
+    padding: 0px 30px;
+  }
+  .grow_business-wrapper button {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .about_experienced-wedding {
+    padding: 80px 0px;
+  }
+  .quality_card-wrapper {
+    display: flex;
+    padding: 60px 0px;
+  }
+  .quality_card h2 {
+    font-size: 24px;
+  }
+  .quality_card {
+    width: 47%;
+    margin: 0;
+  }
+  .contact_heading {
+    width: 80%;
+  }
+}
+/* 991 */
+@media only screen and (min-width: 55.1em) {
+  .mani_plan-destination {
+    display: flex;
+  }
+  .mani_plan-img,
+  .mani_plan-content {
+    width: 50%;
+    height: 100%;
+  }
+  .mani_plan-content p {
+    font-size: 30px;
+  }
+  .mani_plan-content h2 {
+    font-size: 40px;
+    padding: 0;
+  }
+  .mani_footer-title {
+    width: 25%;
+  }
+  .mani_footer-wrapper ul li i.fa {
+    display: inline-block;
+  }
+  .trigger_menu {
+    display: none;
+  }
+  .mani_manu-wrapper {
+    display: block;
+  }
+  .mani_complete-wedding-card-wrapper {
+    width: 80%;
+  }
+  .mani_complete {
+    width: 30%;
+  }
+  .about_trusted-left {
+    width: 70%;
+  }
+  .about_trusted-right {
+    width: 30%;
+  }
+  .quality_card {
+    width: 30%;
+  }
+  .contact_area-content form {
+    width: 60%;
+    padding: 10px 10px 10px 0;
+  }
+  #formSubmit {
+    width: auto;
+  }
+  .contact_details-wrapper {
+    width: 40%;
+  }
+  .contact_area-content {
+    display: flex;
+  }
+  .wedding_simpler-content {
+    flex-direction: row;
+    padding: 20px;
+  }
+}
+
+/* MAX WIDTH */
+@media only screen and (max-width: 1120px) {
+  .mani_vendors,
+  .wedding_card {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mani_vendors,
+  .wedding_card {
+    width: 47%;
+  }
+  .wedding_management-content {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .mani_vendor-flex,
+  .wedding_management-content {
+    justify-content: center;
+  }
+  .mani_vendors,
+  .wedding_card {
+    width: 70%;
+  }
+  .mani_love-story {
+    width: 100%;
+  }
+  .timeline {
+    margin: 0px 0 15px 0;
+  }
+  .content {
+    max-height: 370px;
+  }
+  .mani_love-story p {
+    font-size: 15px;
+  }
+  .mani_left-handside {
+    padding: 15px;
+  }
+  .mani_left-handside,
+  .mani_right-handside {
+    width: 50%;
+  }
+  .bead,
+  .line,
+  .line::after,
+  .line::before {
+    display: none !important;
+    background-color: transparent;
+  }
+  .form_center {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mani_vendors,
+  .wedding_card {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .mani_testinomial-card .mani_text-hightlight {
+    font-size: 16px;
+    margin: 0;
+  }
+  /* .section {
+    margin: 0;
+    padding: 0;
+  } */
+  .bead {
+    display: none;
+  }
+  .content {
+    max-height: max-content;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .mani_left-handside {
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+  }
+  .mani_image-wrapper,
+  .mani_left-handside,
+  .mani_right-handside {
+    width: 100%;
+  }
+  .line,
+  .line::after,
+  .line::before {
+    display: none !important;
+  }
+  .form_center {
+    width: 95%;
+  }
+}
