@@ -1138,3 +1138,12 @@ form.letConnectForm > div span {
 .catering_management h2 {
   font-size: 30px;
 }
+/* CAREER */
+.career_soon {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+.career_soon h2 {
+  font-size: 45px;
+}
