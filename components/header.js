@@ -70,7 +70,7 @@ class myHeader extends HTMLElement {
           <li><a href="#">Entertainment Management</a></li>
           <li><a href="#">Corporate Events</a></li></ul>
         </li>
-        <li class="mobile_menu"><a href="/pages/career.html">CAREER</a></li>
+        <li class="mobile_menu"><a href="/pages/career.html">CAREERS</a></li>
         <li class="mobile_menu"><a href="/pages/contact.html">CONTACT US</a></li>
       </ul>
   </div>
