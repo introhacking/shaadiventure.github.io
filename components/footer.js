@@ -88,3 +88,14 @@ class myFooter extends HTMLElement {
   }
 }
 customElements.define("my-footer", myFooter);
+
+// BACK TO TOP
+class backToTop extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<div class='backTop_wrapper' id='backTop_wrapper'>
+    <span><i class="fa fa-angle-double-up"></i>
+    </span>
+    </div>`;
+  }
+}
+customElements.define("back-to-top", backToTop);

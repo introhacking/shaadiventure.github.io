@@ -160,7 +160,7 @@ class letConnectForm extends HTMLElement {
             <span id="info_budgetErr"></span>
           </div>
           <div>
-            <button>Let's Connect</button>
+            <button type='submit'>Let's Connect</button>
           </div>
         </form>
       </div>

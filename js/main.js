@@ -46,13 +46,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Sticky navabar
   let stickyClassAdd = document.querySelector(".mani_header-section");
+  let backTopClassAdd = document.querySelector("body");
   let headerSticky = document.querySelector("header");
   const observer = new IntersectionObserver(
     (enteries) => {
       const entValue = enteries[0];
       entValue.isIntersecting === false
-        ? stickyClassAdd.classList.add("sticky")
-        : stickyClassAdd.classList.remove("sticky");
+        ? (stickyClassAdd.classList.add("sticky"),
+          backTopClassAdd.classList.add("backTop"))
+        : (stickyClassAdd.classList.remove("sticky"),
+          backTopClassAdd.classList.remove("backTop"));
     },
     {
       root: null,
@@ -62,8 +65,16 @@ window.addEventListener("DOMContentLoaded", () => {
   );
   observer.observe(headerSticky);
 
+  // BACK TO TOP
+  $(document).ready(() => {
+    $("#backTop_wrapper").click(function () {
+      $("html,body").animate({ scrollTop: 0 }, 500);
+    });
+    return false;
+  });
+
   // CONTACT PAGE FORM VALIDATION
-  const formSubmit = document.getElementById("formSubmit");
+  const formSubmit = document.querySelector("#formSubmit");
   const inputs = document.querySelectorAll("form#form input");
   formSubmit.addEventListener("click", (e) => {
     formValidation(e);
@@ -75,7 +86,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let email = document.getElementById("email").value.trim();
     let city = document.getElementById("city").value.trim();
     let date = document.getElementById("date").value.trim();
-    let budget = document.getElementById("budget");
+    let budget = document.getElementById("budget").value;
     let emailRegChecker =
       /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
@@ -123,7 +134,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       document.getElementById("dateErr").innerHTML = "";
     }
-    if (budget.value === "--Select your Budget--") {
+    if (budget === "--Select your Budget--") {
       document.getElementById("budgetErr").innerHTML = "Select your Budget";
       return false;
     } else {
@@ -142,7 +153,7 @@ formHide.addEventListener("click", () => {
 });
 
 const formSubmit = document.getElementById("letConnectForm");
-formSubmit.addEventListener("click", (e) => {
+formSubmit.addEventListener("submit", (e) => {
   infoFormSubmitToConnect(e);
 });
 // INFOMATION FORM TO CONNECT CLIENT
@@ -153,9 +164,9 @@ const infoFormSubmitToConnect = (e) => {
   let email = document.getElementById("info_email").value.trim();
   let city = document.getElementById("info_city").value.trim();
   let date = document.getElementById("info_date").value.trim();
-  let budget = document.getElementById("info_budget");
-  let category = document.getElementById("info_category");
-  let noOfPax = document.getElementById("info_pax");
+  let budget = document.getElementById("info_budget").value;
+  let category = document.getElementById("info_category").value;
+  let noOfPax = document.getElementById("info_pax").value;
   let emailRegChecker =
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
@@ -204,24 +215,25 @@ const infoFormSubmitToConnect = (e) => {
   } else {
     document.getElementById("info_dateErr").innerHTML = "";
   }
-  if (category.value === "--Select your category--") {
+  if (category === "--Select your category--") {
     document.getElementById("info_categoryErr").innerHTML =
       "Select your category";
     return false;
   } else {
     document.getElementById("info_categoryErr").innerHTML = "";
   }
-  if (noOfPax.value === "--Number of Pax--") {
+  if (noOfPax === "--Number of Pax--") {
     document.getElementById("info_paxErr").innerHTML = "Select No. of pax";
     return false;
   } else {
     document.getElementById("info_paxErr").innerHTML = "";
   }
-  if (budget.value === "--Select your Budget--") {
+  if (budget === "--Select your Budget--") {
     document.getElementById("info_budgetErr").innerHTML = "Select your Budget";
     return false;
   } else {
     document.getElementById("info_budgetErr").innerHTML = "";
+    console.log({ name, phone, email, city, date, budget, noOfPax, category });
     letBody.classList.remove("form_open");
   }
 };
